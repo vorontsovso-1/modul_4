@@ -1,8 +1,7 @@
+def palindrome(s: str):
+    snew = s.replace(" ", "").lower()
+    ls = len(snew)
+    if snew[:ls // 2] == snew[ls // 2 + 1:][::-1]:
+        return "Палиндром"
+    return "Не палиндром"
 
-
-slovo = str(input())
-a = slovo[::-1]
-if slovo == a:
-  print("True")
-else:
-  print("False")
